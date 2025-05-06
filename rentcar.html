@@ -3,25 +3,6 @@
 <html lang="ko">
 <head>
    
-  
-<!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '953298362965425');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=953298362965425&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
 
 
     <title>충격! 장기렌트카 가격 구조의 비밀 feat. 렌트카 견적서의 진실</title>
@@ -168,7 +149,6 @@
                         <a href="#fm-box" class="scroll btn-main">즉시 혜택지원 받기</a>
                     </div>
                 </div>
-               
             </div>
         </div>-->
         <!--<div class="sec02 contents">
@@ -268,39 +248,8 @@
         </div> -->
 
       
-          
-        <style>
-            #dbform{
-                height:447px;
-            }
-
-            @media screen and (max-width:1500px) {
-             
-             #dbform{
-             height:417px;
-         }
-
-         }
-
-
-            @media screen and (max-width:430px) {
-             
-                #dbform{
-                height:337px;
-            }
-
-            }
-
-        </style>
-
-
-        <iframe frameborder='0' id="dbform" width='100%' height="100%"  name='ifrm_dbdbdeep' scrolling='no' src='https://dbdbdeep.com/new/mct/ifr/?S00274859QC05740702D' ></iframe><script src='//dbdbdeep.com/cms/js/jquery/jquery-1.8.2.min.js'></script><script type='text/javascript' src='//dbdbdeep.com/site17/ifr/js/jquery.iframeResizer.min.js'></script><script type='text/javascript'>var filter='win16|win32|win64|mac';navigator.platform&&(0>filter.indexOf(navigator.platform.toLowerCase())?$('iframe').iFrameSizer({log:!0,autoResize:!0,contentWindowBodyMargin:8,doHeight:!0,doWidth:!1,enablePublicMethods:!0,interval:0,scrolling:!1,callback:function(i){}}):$(document).ready(function(){$('iframe').iFrameSizer({log:!0,autoResize:!0,contentWindowBodyMargin:8,doHeight:!0,doWidth:!1,enablePublicMethods:!0,interval:0,scrolling:!1,callback:function(i){}})}));</script>
-        <!--<div id="form"></div>-->
+        <div id="form"></div>
     </div><!-- contentsWrap end -->
-
-   
-
-
 
    
 
@@ -382,8 +331,7 @@
 
         <div id="footer"></div>
 
-
-    <div id="privacy">
+    <div id="privacy">  <!--form파일, 자체폼 소스 하단 명령어 onclick="privacyPopup()" -->
         <div id="privacyContent">
             <div class="titWrap">
                 <span>개인정보취급방침</span>
@@ -464,17 +412,13 @@
     </div>
     <!--footer 끝-->
    
-   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <script src="./js/others.js"></script> -->
     <script src="./js/footer-rent.js" ></script>
     <script src="./js/count.js" ></script>
-    <script src="./js/form-hg.js"></script>
-
-    <script src="js/validation-hg.js"></script>
+    <script src="./js/form-rent-row.js"></script>
+    <script src="js/validation-rent-row.js"></script>
     <script src="js/personal.js"></script>
    <script src="js/main.js" charset="euc-kr"></script>
-
      <!-- Script File -->
      
      <script src="js/wow.min.js"></script>
@@ -493,12 +437,8 @@
      <!-- <script src="./js/slides.min.js" ></script> -->
      <!-- Popper JS -->
 
- 
-  
-     
     <script>
         function chk_num(obj){obj.value=obj.value.replace(/[^0-9]/g,'');}
-
         $(document).ready(function ($) {
             $(".scroll").click(function(event){ event.preventDefault(); $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500); });
 
@@ -510,113 +450,57 @@
             });
 
             $(".btn-show").click(function (e) {
-                $(".agreement").toggle();
+                    $(".agreement").toggle();
                 return false;
             });
             
             new WOW().init();
     
-            
         });
     </script>
 
+<script src="./js/ValidCheck.js" charset='utf-8'></script>  <!--딥딥 validCheck.js 내용 새로운 파일로 저장완료 (05.06)-->
 
-<script src="./js/ValidCheck.js" charset='utf-8'></script>
+
+<script language="javascript">
+    var dbdb_submitted = false;  // ★★새롭게 추가한 녀석(25.05.07-새벽2시)
     
-<script language="JavaScript" type="text/JavaScript">
-	function OnSubmit() {
-		var f = document.inputForm;
+    function OnSubmit(f) {                  // f는 폼(form)자체를 의미함.
+        if(dbdb_submitted == true) { return; }   // return은 함수 실행을 멈추라는 명령어. 왼쪽 해석 = if(만약) db가 submitted(이미 제출된게) true(맞다면) return; (함수실행을 멈춘다)
+    
+        var f = document.inputForm;
+        
+        if ( VC_inValidText(f.name, "성함") ) return;
+        
+        if ( VC_inValidText(f.tel, "연락처") ) return;
+        if ( VC_inValidNumber(f.tel, "연락처") ) return;
+        
+        if ( VC_inValidText(f.item1, "희망모델") ) return;
+        
+        if ( !f.agree.checked ) {
+            alert("개인정보 취급을 동의해 주세요!   ");
+            return;
+        }
+        
+        f.auto_defense.value = "identicharddeep!";
+    
+        dbdb_submitted = true;  // << 모든조건 통과하면, "제출했음" 표기하고, 실제로 폼을 제출함
+        f.submit();	
+    }
+    
+    $(document).ready(function() {			
+        $("#tel").keyup(function() {
+            var replace_text = $(this).val().replace(/[^-0-9]/g, '');
+            $(this).val(replace_text);
+        });
+    });
+    
+    </script>
 
-		if (VC_inValidText(f.name, "이름"))
-			return;
-
-		if (VC_isUnselectRadio(f.sex, "성별"))
-			return;
-		if (VC_inValidFemale(f.sex, "22", "S00211145V"))
-			return;
-
-		if (VC_inValidText(f.age, "나이"))
-			return;
-		if (VC_inValidNumber(f.age, "나이"))
-			return;
-		if (VC_inValidAgeLimit(f.age, "0",
-				"0"))
-			return;
-
-		if (VC_inValidText(f.tel1, "연락처"))
-			return;
-		if (VC_inValidNumber(f.tel1, "연락처"))
-			return;
-		if (VC_inValidText(f.tel2, "연락처"))
-			return;
-		if (VC_inValidNumber(f.tel2, "연락처"))
-			return;
-		if (VC_inValidText(f.tel3, "연락처"))
-			return;
-		if (VC_inValidNumber(f.tel3, "연락처"))
-			return;
-
-		if (!f.agree[0].checked) {
-			alert("개인정보 수집/이용, 취급/위탁에 동의해 주세요!   ");
-			return;
-		}
-
-		f.auto_defense.value = "identicharddeep!";
-		f.submit();
-	}
-
-	function OnSubmit2() {
-		var f = document.inputForm2;
-
-		if (VC_inValidText(f.name, "이름"))
-			return;
-
-		if (VC_isUnselectRadio(f.sex, "성별"))
-			return;
-		if (VC_inValidFemale(f.sex, "22", "S00211145V"))
-			return;
-
-		if (VC_inValidText(f.age, "나이"))
-			return;
-		if (VC_inValidNumber(f.age, "나이"))
-			return;
-		if (VC_inValidAgeLimit(f.age, "0",
-				"0"))
-			return;
-
-		if (VC_inValidText(f.tel1, "연락처"))
-			return;
-		if (VC_inValidNumber(f.tel1, "연락처"))
-			return;
-		if (VC_inValidText(f.tel2, "연락처"))
-			return;
-		if (VC_inValidNumber(f.tel2, "연락처"))
-			return;
-		if (VC_inValidText(f.tel3, "연락처"))
-			return;
-		if (VC_inValidNumber(f.tel3, "연락처"))
-			return;
-
-		if (!f.agree[0].checked) {
-			alert("개인정보 수집/이용, 취급/위탁에 동의해 주세요!   ");
-			return;
-		}
-
-		f.auto_defense.value = "identicharddeep!";
-		f.submit();
-	}
-
-	function dbdb_pri_popup() {
-		window.open("w_personal.html", "",
-				"scrollbars=yes,status=no,width=618 height=618 top=0 left=0");
-	}
-</script>
 
 <script>
     $(function () {    
     $('#logo_img, #menu_logo').attr("src","./img/lic_favicon.png")
-    
-    
     });
     </script>
 
@@ -626,6 +510,5 @@
     // $('#select_lic').css({"display":"none"});
     </script>
     
-
 </body>
 </html>
