@@ -73,12 +73,12 @@ $(document).ready(function(){
         if(error == false){
            // Disable submit button just after the form processed 1st time successfully. // 해석 ★★위 검토결과 문제가 없다면, id값이 form_e11인 태그의 action 속성값을 구글폼 url을 넣는다
           
-           $('#form_e11').prop("action", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSebn1-oAdXA61zDmgHIol4-ru9MHcDjAN5nei5UWtOSgGjEfQ/formResponse");  
+           $('#form_e11').prop("action", "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIF_EtSzx64tM5G3JK1Z0iho107uUFtHMcFA4GV9PSIVj_6A/formResponse?pli=1");
            $('#send_message').attr({'disabled' : 'true', 'value' : '전송 중입니다' });
            
             
      $('#send_message').prop("disabled", false);
-     OnSubmit();
+     OnSubmit();   // 구글폼만 db드가는지 확인하기 위해 주석처리
     $('#send_message').css({transition:"1s"});
     $('#send_message').css({background:"#222222"});
     $('#send_message').css({color:"#fff"});

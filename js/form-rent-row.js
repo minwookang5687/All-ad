@@ -14,9 +14,9 @@ form.innerHTML = `
     <h1 class="form-top-title">특별 이벤트 & 무료 전화 상담 신청하기</h1>
 
     <div class="form-box-inner">
-    
+
         <form action="" id="form_e11" method="POST" target="hidden_iframe11" onsubmit="dll(); submitted=true;">
-          <input type="hidden" name="entry.1963222260" value="당근"> <!--★★구글폼 유입경로★-->
+          <input type="hidden" name="entry.190995572" value="매체미정"> <!--★★구글폼 유입경로★-->
             <div class="form-box-tb-out">
             <br>
                 <table class="form-box-tb">
@@ -40,14 +40,14 @@ form.innerHTML = `
                     <tr>
                         <th><!--<i class="fa fa-user" aria-hidden="true"></i>-->이름</th>
                         <td>
-                            <input type='text' name='entry.7949044' id='name' class="form-control" placeholder="성함" maxlength="4">
+                            <input type='text' name='entry.1777433148' id='name' class="form-control" placeholder="성함" maxlength="4">
                         </td>
                     </tr>
                   
                     <tr>
                         <th>원하는 차종</th>
                         <td>
-                            <input type='text' name='entry.577891472' id='carname' class="form-control" placeholder="원하는 차종">
+                            <input type='text' name='entry.113453114' id='carname' class="form-control" placeholder="원하는 차종">
                            
                         </td>
                     </tr>
@@ -55,7 +55,7 @@ form.innerHTML = `
             <tr>
               <th><!--<i class="fa fa-phone" aria-hidden="true"></i>-->연락처</th>
               <td>
-                  <input type='text' name='entry.1931013470' id='phone' class="form-control" placeholder="휴대폰번호" maxlength="11">
+                  <input type='text' name='entry.2022906720' id='phone' class="form-control" placeholder="휴대폰번호" maxlength="11">
               </td>
           </tr>
                     <!-- <tr>
