@@ -11,12 +11,12 @@ form.innerHTML = `
          <b style="font-size:20px;">현재  [ <span class="counter blink" style="bottom:0px;font-weight:bold;color:blue;">37</span> / 50 명 ] 남았습니다.</b>
       </a></div></div>-->
       <br>
-    <h1 class="form-top-title">선착순 50명 & 5~17세 아역모델 특별모집 이벤트</h1>
+    <h1 class="form-top-title"> 5~17세 아역모델 특별모집 이벤트</h1>
 
     <div class="form-box-inner">
 
         <form action="" id="form_e11" method="POST" target="hidden_iframe11" onsubmit="dll(); submitted=true;">
-          <input type="hidden" name="entry.190995572" value="당근"> 
+          <input type="hidden" name="entry.11528730" value="유입매체"> 
             <div class="form-box-tb-out">
             <br>
                 <table class="form-box-tb">
@@ -40,14 +40,14 @@ form.innerHTML = `
                     <tr>
                         <th><!--<i class="fa fa-user" aria-hidden="true"></i>-->자녀이름</th>
                         <td>
-                            <input type='text' name='entry.1777433148' id='name' class="form-control" placeholder="자녀이름" maxlength="4">
+                            <input type='text' name='entry.478774364' id='name' class="form-control" placeholder="자녀이름" maxlength="4">
                         </td>
                     </tr>
 
                     <tr>
                         <th><!--<i class="fa fa-phone" aria-hidden="true"></i>-->부모님 연락처</th>
                         <td>
-                            <input type='text' name='entry.2022906720' id='phone' class="form-control" placeholder="휴대폰번호" maxlength="11">
+                            <input type='text' name='entry.914822672' id='phone' class="form-control" placeholder="휴대폰번호" maxlength="11">
                         </td>
                     </tr>
                     <!--<tr>
@@ -61,7 +61,7 @@ form.innerHTML = `
                     <tr>
                         <th>출생연도</th>
                         <td>
-                            <select name="entry.882151947" id='birthday' class="form-control" placeholder="현재 조건">
+                            <select name="entry.1954552266" id='birthday' class="form-control" placeholder="현재 조건">
                                 <option value="5~17세 자녀만 신청 가능" selected disabled>5~17세 자녀만 신청 가능
                                     <option value="2020년">2020년</option>
                                     <option value="2019년">2019년</option>
@@ -82,7 +82,7 @@ form.innerHTML = `
                     <tr>
                         <th>지역</th>
                         <td>
-                            <select name="entry.882151947" id='area' class="form-control" placeholder="현재 조건">
+                            <select name="entry.395660630" id='area' class="form-control" placeholder="현재 조건">
                                 <option value="지역을 선택하세요" selected disabled>지역을 선택하세요
                                     <option value="서울">서울</option>
                                     <option value="경기">경기</option>
@@ -118,8 +118,8 @@ form.innerHTML = `
 
                                 <script type="text/javascript">var submitted = false;</script>
 
-                                <iframe name="hidden_iframe11" id="hidden_iframe11" style="display:block;" onload=""></iframe>
-                                <iframe name="hidden_iframe12" id="hidden_iframe12" style="display:block;" onload=""></iframe>
+                                <iframe name="hidden_iframe11" id="hidden_iframe11" style="display:none;" onload=""></iframe>
+                                <iframe name="hidden_iframe12" id="hidden_iframe12" style="display:none;" onload=""></iframe>
                                
                             </div>
                         </td>
@@ -133,7 +133,7 @@ form.innerHTML = `
 </div><!----form-end------>
 
 <!--아래 딥딥폼-->
-<section id="dbscf" style="display:block;">
+<section id="dbscf" style="display:none;">
 <form id="db" name="inputForm" accept-charset="euc-kr" method="post" action="https://dbdbdeep.com/new/mct/ifr/ifr_save.php" target="hidden_iframe12">
 <input type="hidden" name="ms" value="S00278004O" />
 <input type="hidden" name="ca" value="C05856127P" />
