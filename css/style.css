@@ -154,7 +154,7 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     background-size: cover;
     background-position: center bottom;
     height: auto;
-    padding: 8vh 0;
+    padding: 8vh 0 0 0;  /*랜딩이미지 하단 여백*/
     color: #fff;
     text-align: center;
 }
