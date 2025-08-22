@@ -62,7 +62,7 @@ form.innerHTML = `
                     <tr>
                         <th>확인사항</th>
                         <td>
-                            <textarea name='entry.1470172621' id='message' class="form-control" placeholder="최대90만원 통신비 무료지원을 위해 자취중인 가구의 인터넷 변경시 더 저렴한 요금제와 통신비 현금수령 절차를 안내드립니다.예시답변) 네 /네 확인했습니다." style="min-height:100px"></textarea>
+                            <textarea name='entry.1470172621' id='message' class="form-control" placeholder="최대90만원 통신비 무료지원을 위해 자취중인 가구의 인터넷 변경시 더 저렴한 요금제와 통신비 현금수령 절차를 안내해드립니다.\n예시답변) 네 /네 확인했습니다." style="min-height:100px"></textarea>
                         </td>
                     </tr>
                     <tr>
