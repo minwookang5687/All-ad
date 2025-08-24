@@ -68,7 +68,7 @@ $(document).ready(function(){
         if(error == false){
            // Disable submit button just after the form processed 1st time successfully. // 해석 ★★위 검토결과 문제가 없다면, id값이 form_e11인 태그의 action 속성값을 구글폼 url을 넣는다
           
-           $('#form_e11').prop("action", "https://docs.google.com/forms/d/e/1FAIpQLScjPT9DqGOwiwtA52W6ECP1CkydBywzg9ghzgcFO0RLTj_iJA/formResponse");
+           $('#form_e11').prop("action", "https://docs.google.com/forms/d/e/1FAIpQLSdiG1sIVjFhLE5725djAeX1LRNsg9sl0nW8XQo44wKYGd1twQ/formResponse");
            $('#send_message').attr({'disabled' : 'true', 'value' : '전송 중입니다' });
            
             
@@ -100,7 +100,7 @@ function maxLengthCheck(object){
  function hoa(){      // 폼 제출하고 떙큐페이지 넘기는 함수
         alert("잠시만 기다려주세요.");
         $(window).scrollTop(0);
-        window.location.href = './result-penguin.html';
+        window.location.href = './result-penguinnew.html';
  }
 
  

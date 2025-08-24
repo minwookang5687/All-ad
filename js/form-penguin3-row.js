@@ -16,7 +16,7 @@ form.innerHTML = `
     <div class="form-box-inner">
 
         <form action="" id="form_e11" method="POST" target="hidden_iframe11" onsubmit="setTimeout(hoa, 1500); submitted=true;"> <!-- ★★폼 제출버튼 클릭하면, 1.5초간 기다리며 구글폼으로 먼저 들어간뒤 hoa(); 함수가 실행되어 땡큐페이지로 넘어감(25.07.15)★★ -->
-          <input type="hidden" name="entry.1352995243" value="유입매체">
+          <input type="hidden" name="entry.2139120248" value="유입매체">
             <div class="form-box-tb-out">
             <br>
                 <table class="form-box-tb">
@@ -39,20 +39,20 @@ form.innerHTML = `
                     <tr>
                         <th><!--<i class="fa fa-user" aria-hidden="true"></i>-->이름</th>
                         <td>
-                            <input type='text' name='entry.461897448' id='name' class="form-control" placeholder="이름" maxlength="4">
+                            <input type='text' name='entry.863777937' id='name' class="form-control" placeholder="이름" maxlength="4">
                         </td>
                     </tr>
 
                     <tr>
                         <th><!--<i class="fa fa-phone" aria-hidden="true"></i>-->연락처</th>
                         <td>
-                            <input type='text' name='entry.1063462958' id='phone' class="form-control" placeholder="휴대폰번호" maxlength="11">
+                            <input type='text' name='entry.309869202' id='phone' class="form-control" placeholder="휴대폰번호" maxlength="11">
                         </td>
                     </tr>
                     <tr>
                         <th>인터넷<br>이용행태</th>
                         <td>
-                            <select name="entry.167893545" id='Reason' class="form-control" placeholder="현재 조건">
+                            <select name="entry.1061305054" id='Reason' class="form-control" placeholder="현재 조건">
                                 <option value="해당사항을 선택해주세요" selected disabled>해당사항을 선택해주세요
                                     <option value='약정만료 된지 오래된거 같아요'>약정만료 된지 오래된거 같아요</option>
                                     <option value='통신사 옮긴지 얼마 안됬어요'>통신사 옮긴지 얼마 안됬어요</option>
@@ -62,13 +62,13 @@ form.innerHTML = `
                     <tr>
                         <th>확인사항</th>
                         <td>
-                            <textarea name='entry.1470172621' id='message' class="form-control" placeholder="최대90만원 통신비 무료지원을 위해 자취중인 가구의 인터넷 변경시 더 저렴한 요금제와 통신비 현금수령 절차를 안내해드립니다.\n예시답변) 네 /네 확인했습니다." style="min-height:100px"></textarea>
+                            <textarea name='entry.1123327544' id='message' class="form-control" placeholder="최대90만원 통신비 무료지원을 위해 자취중인 가구의 인터넷 변경시 더 저렴한 요금제와 통신비 현금수령 절차를 안내해드립니다.\n예시답변) 네 /네 확인했습니다." style="min-height:100px"></textarea>
                         </td>
                     </tr>
                     <tr>
                         <th>희망사항</th>
                         <td>
-                            <select name="entry.1125969003" id='Internet' class="form-control" placeholder="현재 조건">
+                            <select name="entry.524644864" id='Internet' class="form-control" placeholder="현재 조건">
                                 <option value="인터넷 요금을 더 저렴히 쓸수있다면 어떤 통신사를 경험해보겠습니까" selected disabled>인터넷 요금을 더 저렴히 쓸수있다면 어떤 통신사를 경험해보겠습니까
                                 <option value='SK'>SK</option>
                                 <option value='LG'>LG</option>
@@ -76,6 +76,7 @@ form.innerHTML = `
                                 <option value='SK Btv pop'>SKB</option>
                                 <option value='LG헬로비전'>LG헬로비전</option>
                                 <option value='KT 스카이라이프'>KT 스카이라이프</option>
+                                <option value='최저요금&최대지원금 상담받고 결정'>최저요금&최대지원금 상담받고 결정</option>
                         </td>
                     </tr>
                    
