@@ -88,7 +88,18 @@
     </script>
     <!-- TikTok Pixel Code End -->
 
-    <script> ttq.track('Lead', { contents: [{ content_id: "lead_ty_01", content_type: "form", content_name: "상담신청완료" }], value: 0, currency: "KRW" }); </script>
+    <script>
+  ttq.track('Lead', {
+    contents: [{
+      content_id: "lead_ty_01",
+      content_type: "form",
+      content_name: "상담신청완료",
+      currency: "KRW"   // ✅ contents 배열 안에도 currency 명시
+    }],
+    value: 25000,       // ✅ 구매 금액 (숫자만)
+    currency: "KRW"     // ✅ 최상위에도 통화 코드
+  });
+</script>
 
 </head>
 
