@@ -102,9 +102,33 @@
 
 <body oncontextmenu="return false;">
 
-    <script>
+   <script>
+    (function () {  //페이스북 픽셀 - 중복로드 방지
+    // URL에서 tx 파라미터 추출
+    var params = new URLSearchParams(window.location.search);
+    var tx = params.get('tx');
+
+    // 토큰이 없으면 발화하지 않음 (공유/직접 접근 차단)
+    if (!tx) {
+        console.info('no token → skip Purchase');
+        return;
+    }
+
+    // 같은 세션에서 같은 토큰으로는 다시 발화하지 않음
+    if (sessionStorage.getItem('tx_used:' + tx)) {
+        console.info('duplicate token → skip Purchase');
+        return;
+    }
+    sessionStorage.setItem('tx_used:' + tx, '1');
+
+    // 최초 1회 정상 발화
     fbq('track', 'Purchase', {currency: "KWD", value: 27000});
-  </script>
+
+    // 새로고침 시 URL에서 토큰 제거
+    history.replaceState({}, '', window.location.pathname);
+    })();
+    </script>
+
 
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQRQNB7S"
