@@ -122,7 +122,7 @@
     sessionStorage.setItem('tx_used:' + tx, '1');
 
     // 최초 1회 정상 발화
-    fbq('track', 'Purchase', {currency: "KWD", value: 27000});
+    fbq('track', 'Purchase', {currency: "KRW", value:0});
 
     // 새로고침 시 URL에서 토큰 제거
     history.replaceState({}, '', window.location.pathname);
